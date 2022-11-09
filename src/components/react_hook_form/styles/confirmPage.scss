@@ -1,0 +1,136 @@
+.check-out-container {
+  min-width: 300px;
+  max-width: 800px;
+  margin: 10px auto;
+  padding: 0 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+
+.confirm-message {
+  white-space: pre-line;
+  margin: 10px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+//item photo and name
+.item-info {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  .price-quantities {
+    width: 240px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  .item-photo-box {
+    padding-top: 20px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: start;
+    margin: 5px 0;
+    gap: 30px;
+    .item-photo {
+      width: 13em;
+      height: 13em;
+    }
+    .item-name {
+      margin-top: -50px;
+      width: 210px;
+    }
+    .item-photo-box-right { 
+      text-align: left;
+      line-height: 24px;
+    }
+  }
+}
+//main content
+.confirm-details {
+  min-width: 220px;
+  .order-date-row {
+    margin: 40px 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    font-weight: bold;
+  }
+  //address
+  .address-title {
+    max-width: 300px;
+  }
+
+  //price section
+  .price-section {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin: 80px 0;
+    .subtotal-row, .shipping-row, .tax-row{
+      display: flex;
+      justify-content: space-between;
+      margin: -10px 0;
+    }
+
+    .total-row {
+      margin: 20px 0;
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+
+  .thank-you-message-row {
+    margin: 4px 0;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+}
+
+//payment button section
+.payment-btn {
+  display: flex;
+  gap: 20px;
+  button {
+    box-sizing: border-box;
+    cursor: pointer;
+    text-align: center;
+    transition: all 0.3s ease;
+    border-radius: 50px;
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: capitalize;
+    background: rgb(54, 105, 250);
+    border: 4px solid transparent;
+    color: #ffffff;
+    min-width: 110px;
+    max-height: 40px;
+  
+    &:hover:not([disabled]) {
+      transform: scale(1.05);
+    }
+  
+    &:active:not([disabled]) {
+      transform: translateY(3px);
+      box-shadow: 0 6px 6px 0 rgba(0, 0, 0, 0.3);
+    }
+  }
+
+}
+
+.question {
+  margin-bottom: 50px;
+}
+
